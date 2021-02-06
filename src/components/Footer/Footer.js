@@ -1,7 +1,11 @@
 import React from 'react'
+import { brandFooter } from '../../assets/images'
+import { FooterWrapper } from './Footer.style'
 
 const Footer = () => (
-  <footer>Footer</footer>
+  <FooterWrapper>
+    <img src={brandFooter} alt="Lolita" />
+  </FooterWrapper>
 )
 
 export { Footer }
