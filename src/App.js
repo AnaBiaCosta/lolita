@@ -1,9 +1,16 @@
 import React from 'react'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { Header, Footer } from './components'
+import { Home } from './pages'
 
 const App = () => (
-  <div className="App">
-    <h1>Lolita</h1>
-  </div>
+  <BrowserRouter>
+    <Header />
+    <Switch>
+      <Route exact path="/" component={Home} />
+    </Switch>
+    <Footer />
+  </BrowserRouter>
 )
 
 export { App }
