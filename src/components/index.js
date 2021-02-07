@@ -6,6 +6,7 @@ import { LoginRegister } from './LoginRegister'
 import { LoginPasswordLost } from './LoginPasswordLost'
 import { LoginPasswordReset } from './LoginPasswordReset'
 import { Input } from './Input'
+import { Title } from './Title'
 
 export {
   GlobalStyle,
@@ -15,5 +16,6 @@ export {
   LoginRegister,
   LoginPasswordLost,
   LoginPasswordReset,
-  Input
+  Input,
+  Title
 }

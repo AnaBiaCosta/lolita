@@ -1,8 +1,9 @@
 import React from 'react'
+import { Title } from '../Title'
 
 const LoginForm = () => (
   <>
-    <h1>Login Form</h1>
+    <Title text="Login" />
   </>
 )
 
