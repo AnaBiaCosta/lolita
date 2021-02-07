@@ -1,5 +1,7 @@
-import { Home } from './Home'
+import { Home } from './Home/Home'
+import { Login } from './Login/Login'
 
 export {
-  Home
+  Home,
+  Login
 }

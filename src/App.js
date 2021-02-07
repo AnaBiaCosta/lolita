@@ -1,15 +1,16 @@
 import React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { GlobalStyle, Header, Footer } from './components'
-import { Home } from './pages'
+import { Home, Login } from './pages'
 
 const App = () => (
   <BrowserRouter>
     <GlobalStyle />
     <Header />
-    <Switch>
-      <Route exact path="/" component={Home} />
-    </Switch>
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+      <Route path="entrar/*" element={<Login />} />
+    </Routes>
     <Footer />
   </BrowserRouter>
 )

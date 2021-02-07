@@ -26,6 +26,11 @@ export const Styles = createGlobalStyle`
     background: none;
   }
 
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+
   p, b, label, a, footer {
     font-family: 'Nunito', 'sans-serif';
     font-weight: 400;
@@ -33,11 +38,17 @@ export const Styles = createGlobalStyle`
 
   h1, h2, h3, h4, header {
     font-family: 'Bhavuka';
+    font-size: 48px;
+    color: #333;
   }
 
   img {
     display: block;
     max-width: 100%;
+  }
+
+  a > span > p {
+    font-family: 'Bhavuka';
   }
 `
 
