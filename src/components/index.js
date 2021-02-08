@@ -7,6 +7,7 @@ import { LoginPasswordLost } from './LoginPasswordLost'
 import { LoginPasswordReset } from './LoginPasswordReset'
 import { Input } from './Input'
 import { Title } from './Title'
+import { Button } from './Button'
 
 export {
   GlobalStyle,
@@ -17,5 +18,6 @@ export {
   LoginPasswordLost,
   LoginPasswordReset,
   Input,
-  Title
+  Title,
+  Button
 }

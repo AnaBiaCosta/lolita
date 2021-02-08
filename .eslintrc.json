@@ -40,6 +40,7 @@
     "jsx-a11y/anchor-is-valid": "off",
     "import/no-cycle": "off",
     "import/no-extraneous-dependencies": "off",
-    "padded-blocks": "off"
+    "padded-blocks": "off",
+    "react/prop-types": "off"
   }
 }

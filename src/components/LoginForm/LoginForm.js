@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
-import { Title } from '../Title'
+import React from 'react'
+import { Title, Input, Button } from '..'
 
 const LoginForm = () => {
-  const [username, setUsername] = useState('')
-  const [password, setPassword] = useState('')
+
+  const username = ''
+  const password = ''
 
   const handleSubimit = event => {
     event.preventDefault()
@@ -23,9 +24,9 @@ const LoginForm = () => {
     <section>
       <Title text="Login" />
       <form action="" onSubmit={handleSubimit}>
-        <input type="text" value={username} onChange={({ target }) => setUsername(target.value)} />
-        <input type="password" value={password} onChange={({ target }) => setPassword(target.value)} />
-        <button type="submit">Entrar</button>
+        <Input label="E-mail" type="text" name="username" />
+        <Input label="Senha" type="password" name="password" />
+        <Button>Entrar</Button>
       </form>
     </section>
   )
