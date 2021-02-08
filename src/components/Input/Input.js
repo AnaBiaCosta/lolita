@@ -2,9 +2,14 @@ import React from 'react'
 import { string } from 'prop-types'
 import { Wrapper, Label, InputText } from './Input.style'
 
-const Input = ({ label, type, name }) => (
+const Input = ({
+  label,
+  type,
+  name,
+  error
+}) => (
   <Wrapper>
-    <InputText id={name} name={name} type={type} required />
+    <InputText id={name} name={name} type={type} error={error} required />
     <Label htmlFor={name}>{label}</Label>
   </Wrapper>
 )

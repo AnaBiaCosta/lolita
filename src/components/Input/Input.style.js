@@ -21,7 +21,7 @@ export const Label = styled.label`
 export const InputText = styled.input`
   width: 270px;
   font-size: 14px;
-  border-bottom: 1px solid #FF8CB5;
+  border-bottom: ${({ error }) => error ? '2px solid #FF2D2D' : '1px solid #FF8CB5'};
   transition: .2s ease-in-out;
   box-sizing: border-box;
   color: #333;
@@ -29,7 +29,7 @@ export const InputText = styled.input`
 
   :valid, :focus {
     color: #333;
-    border-bottom: 2px solid #FF508F;
+    border-bottom: ${({ error }) => error ? '2px solid #FF2D2D' : '2px solid #FF508F'};
   }
 
   :valid + ${Label}, :focus + ${Label} {
