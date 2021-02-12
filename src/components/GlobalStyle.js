@@ -36,7 +36,7 @@ export const Styles = createGlobalStyle`
     font-weight: 400;
   }
 
-  h1, h2, h3, h4, header {
+  h1, header {
     font-family: 'Bhavuka';
     font-size: 48px;
     color: #333;

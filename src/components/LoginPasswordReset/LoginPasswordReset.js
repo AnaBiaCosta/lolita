@@ -1,7 +1,9 @@
 import React from 'react'
 
 const LoginPasswordReset = () => (
-  <h1>Login PasswordReset</h1>
+  <section>
+    <h1>Login Password Reset</h1>
+  </section>
 )
 
 export { LoginPasswordReset }
